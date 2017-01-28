@@ -1,0 +1,288 @@
+img {
+	
+	display: inline-block;
+	float: left;
+	height: 80px;
+	width: 80px;
+	bottom: 0;
+    right: 0;
+	margin: 30px;
+
+	
+}
+
+.zoom_image {
+	position: fixed;
+	z-index: 2000;
+    top: 20%;
+    left: 30%;
+	height: 400px;
+	width: 400px;
+    color: #ccc;
+    transition: 0.3s;
+	
+}
+
+.TIV{
+	float: left;
+	max-height: 140px;
+	max-width: 140px;
+	margin: 20px;
+	padding: 2px;
+	border: 1px  solid black;
+	
+}
+
+.close {
+	display: none;
+    position: fixed;
+
+	top: 20%;
+    left: 60%;
+	z-index: 2000;
+    color: #f1f1f1	;
+    font-size: 20px;
+	background-color: white;
+	
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+img:hover {
+	  box-shadow: 0 0 20px 1px rgba(0, 140, 186, 0.5);
+
+	
+}
+
+#title {
+	background-image: url("images/background.jpg");
+    background-attachment: fixed;
+    padding:5px;
+    max-height:130px;
+}
+
+#text_head {
+	
+	text-align: center;
+
+}
+
+#allMetaDataSpan{
+	display: none;
+	width: 250px;
+	height:500px;
+	
+	
+	
+}
+
+.metaData{
+	display: inline-block;
+	float: right;
+	position: fixed;
+	z-index: 2000;
+    top: 24%;
+    left: 57%;
+	max-height: 400px;
+	transition:0.3s;
+
+	
+}
+
+.map_container {
+	display: block;
+	float: right;
+	position: fixed;
+	z-index:2000;
+	top: 70%;
+    left: 20%;
+	height:200px;
+	width: 650px;
+}
+
+.map_container_close {
+	
+	display: none;
+	width: 0px;
+	height: 0px;
+}
+.map {
+	display: block;
+	float: right;
+	position: fixed;
+	z-index:2000;
+	top: 30%;
+    left: 30%;
+	height:150px;
+	width: 650px;
+	
+}
+
+#map {
+	
+	display:	block;
+}
+
+
+
+@media (max-width: 1024px) {
+
+.zoom_image {
+	height: 300px;
+	width: 300px;
+	
+}
+
+#allMetaDataSpan{
+	display: none;
+	width: 250px;
+	height:300px;
+	
+	
+	
+}
+	
+.metaData{
+	
+    top: 25%;
+    left: 64%;
+	
+}
+	
+.map {
+	top: 8%;
+    left: 5%;
+	height:150px;
+	width: 545px;
+	
+}
+
+.close {
+
+	top: 20%;
+    left: 80%;
+	
+}
+}
+
+@media (max-width: 480px) {
+	
+.zoom_image {
+	top: 3%;
+    left: 0%;
+	height: 180px;
+	width: 180px;
+	
+}
+
+#allMetaDataSpan{
+	display: none;
+	width: 220px;
+	height:180px;
+	
+	
+	
+}
+	
+.metaData{
+	
+    top: 12%;
+    left: 50%;
+	
+}
+	
+.map {
+	float: left;
+	top: 0%;
+    left: 0%;
+	height:150px;
+	width: 390px;
+	
+}
+.map_container {
+	display: block;
+	float: left;
+	position: fixed;
+	z-index:2000;
+	top: 60%;
+    left: 10%;
+	height:200px;
+	width: 650px;
+}
+
+.close {
+
+	top: 5%;
+    left: 90%;
+	
+}
+}
+
+@media (max-width: 320px) {
+	
+	
+
+.zoom_image {
+	top: -5%;
+    left: 0%;
+	height: 180px;
+	width: 180px;
+	
+}
+
+#allMetaDataSpan{
+	display: none;
+	width: 150px;
+	height:150px;
+	
+	
+	
+}
+	
+.metaData{
+	
+    top: 12%;
+    left: 50%;
+	
+}
+	
+.map {
+	float: left;
+	top: 0%;
+    left: 0%;
+	height:150px;
+	width: 390px;
+	
+}
+.map_container {
+	display: block;
+	float: left;
+	position: fixed;
+	z-index:2000;
+	top: 60%;
+    left: 10%;
+	height:200px;
+	width: 650px;
+}
+
+.close {
+	z-index: 4000;
+	top: 5%;
+    left: 90%;
+	
+}
+}
